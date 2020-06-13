@@ -24,7 +24,7 @@
 
 </head>
 
-<body id="body">
+<body id="body" data-spy="scroll" data-target=".navbar-nav">
   <div class="main-wrapper">
 
 <aside class="bg-secondary">
@@ -32,16 +32,16 @@
     <h1 class="h3 text-white mb-3">GS Logo Slider View <br> Installation Video</h1>
     <div class="video mb-4">
       <img class="img-fluid" src="images/video-thumb.jpg" alt="">
-      <a class="video-btn" href="#"><i class="ti-control-play"></i></a>
+      <a href="javascript:void(0)" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/nnZeDt2c8Yo" data-target="#popup-video"><i class="ti-control-play"></i></a>
     </div>
     <h4 class="text-white mb-3">Slider Styles</h4>
     <ul class="navbar-nav mb-4">
-      <li class="nav-item"><a class="nav-link" href="#">name</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">name</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">name</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">name</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">name</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">name</a></li>
+      <li class="nav-item"><a class="nav-link" href="#default-slider">Default Slider</a></li>
+      <li class="nav-item"><a class="nav-link" href="#slider-arrow">Slider Arrow</a></li>
+      <li class="nav-item"><a class="nav-link" href="#slider-thumbnail">Slider Thumbnail</a></li>
+      <li class="nav-item"><a class="nav-link" href="#slider-grayscale">Slider Grayscale</a></li>
+      <li class="nav-item"><a class="nav-link" href="#slider-center">Slider Centermode</a></li>
+      <li class="nav-item"><a class="nav-link" href="#slider-tilt">Slider Hover</a></li>
     </ul>
 
     <ul class="list-inline">
@@ -51,6 +51,20 @@
   </div>
 </aside>
 
+<!-- modal -->
+<div class="modal fade" id="popup-video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content rounded-xl overflow-hidden">
+      <div class="modal-body p-0">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal -->
+
 <!-- wrapper -->
 <div class="wrapper">
   <img src="images/demo-bg.png" class="wrapper-bg" alt="">
@@ -59,7 +73,7 @@
   </button>
 
 <!-- logo slider 1 -->
-<section>
+<section id="default-slider">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -81,7 +95,7 @@
 <!-- /logo slider 1 -->
 
 <!-- logo slider 2 -->
-<section>
+<section id="slider-arrow">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -102,6 +116,186 @@
 </section>
 <!-- /logo slider 2 -->
 
+
+<!-- logo slider 3 -->
+<section id="slider-thumbnail">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="block">
+          <h2 class="block-title">Slider with thumbnail</h2>
+          <div class="logo-slider slider-thumb logo-slider-3">
+            <a data-thumb="images/logo/logo-1.png" href="#"><img src="images/logo/logo-1.png" alt="logo"></a>
+            <a data-thumb="images/logo/logo-2.png" href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
+            <a data-thumb="images/logo/logo-3.png" href="#"><img src="images/logo/logo-3.png" alt="logo"></a>
+            <a data-thumb="images/logo/logo-4.png" href="#"><img src="images/logo/logo-4.png" alt="logo"></a>
+            <a data-thumb="images/logo/logo-5.png" href="#"><img src="images/logo/logo-5.png" alt="logo"></a>
+            <a data-thumb="images/logo/logo-6.png" href="#"><img src="images/logo/logo-6.png" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /logo slider 3 -->
+
+
+<!-- logo slider 4 -->
+<section id="slider-grayscale">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="block">
+          <h2 class="block-title">Slider grayscale</h2>
+          <div class="logo-slider slider-grayscale logo-slider-4">
+            <a href="#"><img src="images/logo/logo-1.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-3.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-4.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-5.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-6.png" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /logo slider 4 -->
+
+
+<!-- logo slider 5 -->
+<section id="slider-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="block">
+          <h2 class="block-title">Slider centermode</h2>
+          <div class="logo-slider slider-centermode logo-slider-5">
+            <a href="#"><img src="images/logo/logo-1.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-3.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-4.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-5.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-6.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-1.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-3.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-4.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-5.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-6.png" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /logo slider 5 -->
+
+
+<!-- logo slider 6 -->
+<section id="slider-tilt">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="block">
+          <h2 class="block-title">Slider Hover Effect</h2>
+          <div class="logo-slider slider-tilt logo-slider-6">
+            <a href="#"><img src="images/logo/logo-1.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-3.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-4.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-5.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-6.png" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /logo slider 6 -->
+
+
+<!-- logo slider 7 -->
+<section id="slider-boxy">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="block">
+          <h2 class="block-title">Slider Boxy Style</h2>
+          <div class="logo-slider slider-boxy logo-slider-7">
+            <a href="#"><img src="images/logo/logo-1.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-3.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-4.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-5.png" alt="logo"></a>
+            <a href="#"><img src="images/logo/logo-6.png" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /logo slider 7 -->
+
+
+<!-- logo slider 8 -->
+<section id="slider-border">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="block">
+          <h2 class="block-title">Slider with Border</h2>
+          <div class="logo-slider slider-border logo-slider-8">
+            <a href="#">
+              <img src="images/logo/logo-1.png" alt="logo">
+              <span class="line right"></span>
+              <span class="line top"></span>
+              <span class="line left"></span>
+              <span class="line bottom"></span>
+            </a>
+            <a href="#">
+              <img src="images/logo/logo-2.png" alt="logo">
+              <span class="line right"></span>
+              <span class="line top"></span>
+              <span class="line left"></span>
+              <span class="line bottom"></span>
+            </a>
+            <a href="#">
+              <img src="images/logo/logo-3.png" alt="logo">
+              <span class="line right"></span>
+              <span class="line top"></span>
+              <span class="line left"></span>
+              <span class="line bottom"></span>
+            </a>
+            <a href="#">
+              <img src="images/logo/logo-4.png" alt="logo">
+              <span class="line right"></span>
+              <span class="line top"></span>
+              <span class="line left"></span>
+              <span class="line bottom"></span>
+            </a>
+            <a href="#">
+              <img src="images/logo/logo-5.png" alt="logo">
+              <span class="line right"></span>
+              <span class="line top"></span>
+              <span class="line left"></span>
+              <span class="line bottom"></span>
+            </a>
+            <a href="#">
+              <img src="images/logo/logo-6.png" alt="logo">
+              <span class="line right"></span>
+              <span class="line top"></span>
+              <span class="line left"></span>
+              <span class="line bottom"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /logo slider 8 -->
+
 </div>
 <!-- /wrapper -->
 </div>
@@ -113,9 +307,10 @@
 <script src="plugins/bootstrap/bootstrap.min.js"></script>
 <!-- slick -->
 <script src="plugins/slick/slick.min.js"></script>
+<!-- tilt js -->
+<script src="plugins/tilt/tilt.min.js"></script>
 <!-- main script -->
 <script src="js/script.js"></script>
-
 
 </body>
 
