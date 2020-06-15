@@ -5,7 +5,15 @@
 	$('.navbar-toggler').on('click', function () {
 		$('.sidenav').toggleClass('show');
 		$('.wrapper').toggleClass('hide');
+		$('.layer').addClass('d-block');
 	});
+
+	$('.layer').on('click', function () {
+		$('.sidenav').removeClass('show');
+		$('.wrapper').removeClass('hide');
+		$(this).removeClass('d-block');
+	});
+
 
 	// popup video
 	var $videoSrc;
@@ -249,17 +257,11 @@
 		responsive: [{
 				breakpoint: 1024,
 				settings: {
-					slidesToShow: 4
-				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
 					slidesToShow: 3
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 600,
 				settings: {
 					slidesToShow: 2
 				}
@@ -279,17 +281,11 @@
 		responsive: [{
 				breakpoint: 1024,
 				settings: {
-					slidesToShow: 4
-				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
 					slidesToShow: 3
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 600,
 				settings: {
 					slidesToShow: 2
 				}
